@@ -1,0 +1,189 @@
+/************************** About **************************/
+
+
+#about {
+    position: relative;
+    width: 100%;
+    height: 210vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Background */
+
+.bg-pres {
+    position: absolute;
+    left: 10%;
+    width: 90%;
+    height: 100%;
+    background: #FFF2C5;
+    background-image: url('../img/background-about.png');
+    background-size: cover;
+    border-radius: 3px;
+}
+
+
+/* Floating image */
+
+.image-anim-about>img {
+    position: absolute;
+    z-index: 1;
+    transform: translatey(0px);
+}
+
+.image-anim-about>img:nth-child(1) {
+    animation: float 6s ease-in-out infinite;
+    width: 55vh;
+    height: 50vh;
+    left: 22%;
+    top: 30%;
+}
+
+.image-anim-about>img:nth-child(2) {
+    animation: float2 8s ease-in-out infinite;
+    width: 50vh;
+    height: 50vh;
+    right: 0%;
+}
+
+
+/* Memoji */
+
+.memoji-container {
+    position: absolute;
+    left: 10%;
+    width: 80vh;
+    height: 80vh;
+    z-index: 1;
+    margin-top: 3%;
+}
+
+.memoji {
+    width: 65%;
+    height: 65%;
+    z-index: 1;
+}
+
+/* Présentation  */
+
+
+.text-presentation {
+
+    width: 40%;
+    margin: 10% 0 5% 35%;
+    border: 4px solid;
+    border-radius: 10px;
+    padding: 25px;
+    z-index: 1;
+    font-family: glacial indifference, sans-serif;
+
+}
+
+.text-presentation>h4 {
+    font-size: 25px;
+}
+
+.text-presentation>p {
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+/* Stack */
+
+
+.stack-about {
+    margin-left: 8%;
+    width: 80%;
+    height: 45%;
+    border: 4px solid;
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 1;
+    font-family: glacial indifference, sans-serif;
+}
+
+.title-stack {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+/* hard skills SVG Stack */
+
+.stack-hard-container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.stack-hard-container>h4 {
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.stack-svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.stack-svg-container>img {
+    width: 80px;
+    height: 80px;
+}
+
+.stack-svg-container>img:nth-child(6) {
+    background-color: #fff;
+    border-radius: 10%;
+    padding: 2px;
+}
+
+/* Soft Skills*/
+
+.stack-soft-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.stack-soft-container>h4 {
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.soft-skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.soft {
+    width: 170px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.soft>img {
+    width: 80px;
+    height: 80px;
+}
+
+.soft>h5 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.soft>p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+}

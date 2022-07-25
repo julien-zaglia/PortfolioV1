@@ -1,0 +1,9 @@
+
+:root {
+    --dark-blue: #1F4782;
+    --dark-gray: #303335;
+    --golden: #AB834C;
+    --golden-tainoi: #E9BE71;
+    --gray: #818C96;
+    --white: #FFF;
+}

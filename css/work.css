@@ -1,0 +1,146 @@
+/************************** Work **************************/
+
+
+#work {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Background */
+
+
+.bg-work {
+    position: absolute;
+    left: 10%;
+    width: 90%;
+    height: 100%;
+    background: #FFF2C5;
+    background-image: url('../img/background-work.png');
+    background-size: cover;
+    border-radius: 3px;
+}
+
+/* animated image */
+
+.image-anim-work>img {
+    position: absolute;
+    z-index: 1;
+    transform: translatey(0px);
+}
+
+.image-anim-work>img:nth-child(1) {
+    animation: float 6s ease-in-out infinite;
+    width: 50vh;
+    height: 40vh;
+    right: 5%;
+    top: 0%;
+}
+
+.image-anim-work>img:nth-child(2) {
+    animation: float2 6s ease-in-out infinite;
+    width: 40vh;
+    height: 40vh;
+    left: 20%;
+    top: 70%;
+}
+
+
+/* Work  */
+
+.work-container {
+
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    padding: 15px;
+    margin: 8% 0 0 8%;
+    width: 80%;
+    height: 70%;
+    border: 5px solid;
+    border-radius: 10px;
+}
+
+.work-title {
+    font-family: glacial indifference, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 5% 0 15px 5%;
+}
+
+/* cards */
+
+.list-work {
+    width: 95%;
+    height: 80%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.card {
+    margin-top: 30px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 0 2px 3px black;
+    border-radius: 10px;
+}
+
+.card:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.card:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.card:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.card:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.card:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.card>img {
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.text-card {
+    background-color: #fff;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: glacial indifference, sans-serif;
+    border-radius: 0 0 10px 10px;
+}
+
+.text-card>h5 {
+    margin: 5px 0 0 0;
+    font-weight: 400;
+    font-size: 25px;
+}

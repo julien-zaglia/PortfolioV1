@@ -1,0 +1,62 @@
+/************************** Contact **************************/
+
+
+#contact {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Background */
+
+
+.bg-contact {
+    position: absolute;
+    left: 10%;
+    width: 90%;
+    height: 100%;
+    background: #FFF2C5;
+    background-image: url('../img/background-contact.png');
+    background-size: cover;
+    border-radius: 3px;
+}
+
+/*animated image */
+
+.image-anim-contact>img {
+    position: absolute;
+    z-index: 1;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+.image-anim-contact>img:nth-child(1) {
+    width: 50vh;
+    height: 40vh;
+    right: 5%;
+    top: 0%;
+}
+
+.image-anim-contact>img:nth-child(2) {
+    width: 40vh;
+    height: 40vh;
+    left: 20%;
+    top: 45%;
+}
+
+/* Work  */
+
+.contact-container {
+
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin: 10%;
+}
+
+.list-contact {
+    margin-top: 30%;
+}
