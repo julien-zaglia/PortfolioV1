@@ -4,7 +4,7 @@
 #contact {
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +34,7 @@
 }
 
 .image-anim-contact>img:nth-child(1) {
+    animation-delay: 2s;
     width: 50vh;
     height: 40vh;
     right: 5%;
@@ -43,20 +44,54 @@
 .image-anim-contact>img:nth-child(2) {
     width: 40vh;
     height: 40vh;
-    left: 20%;
-    top: 45%;
+    left: 15%;
+    top: 70%;
 }
 
-/* Work  */
+/* Contact  */
 
 .contact-container {
 
     display: flex;
     flex-direction: column;
     z-index: 1;
-    margin: 10%;
+    width: 60%;
+    height: 90vh;
+    font-family: glacial indifference, sans-serif;
+
+}
+
+.title-contact {
+    font-size: 50px;
+
 }
 
 .list-contact {
-    margin-top: 30%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto;
+}
+
+.contact-detail {
+    width: 160px;
+    height: 160px;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-detail:nth-child(4) {
+    grid-column: 2;
+}
+
+/* Logo contact  */
+
+.svg-contact {
+    width: 80px;
+    height: 80px;
 }
